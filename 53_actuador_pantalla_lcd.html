@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.3. Actuador pantalla LCD | Construimos nuestro semáforo ambiental </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Este REA es una adaptación de los recurso originales &quot;Guía Docente de: Los sentidos artificiales&quot; del Proyecto REA Andalucía de la Consejería de Educación y Deporte de la Junta de Andalucía, que lo distribuye bajo licencia de CC BY-SA-NC." />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-148"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Construimos nuestro semáforo ambiental</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Construimos nuestro semáforo ambiental</a></li>
+   <li><a href="1_qu_vamos_a_hacer.html" class="no-ch">1. ¿Qué vamos a hacer?</a></li>
+   <li><a href="2_activamos_nuestros_circuitos.html" class="no-ch">2. Activamos nuestros circuitos</a></li>
+   <li><a href="3_nuestra_placa_robtica.html" class="daddy">3. Nuestra placa robótica</a>
+   <ul class="other-section">
+      <li><a href="31_exploramos_la_placa.html" class="no-ch">3.1. Exploramos la placa</a></li>
+      <li><a href="32_el_cerebro_de_nuestro_robot.html" class="daddy">3.2. El cerebro de nuestro robot</a>
+      <ul class="other-section">
+         <li><a href="321_qu_has_aprendido_sobre_los_microcontroladores.html" class="no-ch">3.2.1. Qué has aprendido sobre los microcontroladores</a></li>
+      </ul>
+      </li>
+      <li><a href="33_entradas_procesamiento_y_salidas.html" class="no-ch">3.3. Entradas, procesamiento y salidas</a></li>
+   </ul>
+   </li>
+   <li><a href="4_enseamos_a_nuestra_placa.html" class="daddy">4. Enseñamos a nuestra placa</a>
+   <ul class="other-section">
+      <li><a href="41_practiquemos_con_los_algoritmos.html" class="no-ch">4.1. Practiquemos con los algoritmos</a></li>
+      <li><a href="42_en_qu_idioma_me_comunico_con_mi_placa.html" class="daddy">4.2. ¿En qué idioma me comunico con mi placa?</a>
+      <ul class="other-section">
+         <li><a href="421_nuestro_editor_de_cdigo.html" class="no-ch">4.2.1. Nuestro editor de código</a></li>
+      </ul>
+      </li>
+      <li><a href="43_empecemos_a_trabajar.html" class="no-ch">4.3. Empecemos a trabajar.</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_nos_ponemos_manos_a_la_obra.html" class="current-page-parent daddy">5. Nos ponemos manos a la obra</a>
+   <ul>
+      <li><a href="51_sensor_de_c02_con_actuador_zumbador.html" class="no-ch">5.1. Sensor de C02 con actuador Zumbador</a></li>
+      <li><a href="52_sensor_de_temperatura_con_actuador_led_rgb.html" class="no-ch">5.2. Sensor de temperatura con actuador Led RGB</a></li>
+      <li id="active"><a href="53_actuador_pantalla_lcd.html" class="active no-ch">5.3. Actuador pantalla LCD</a></li>
+      <li><a href="54_semforo_de_temperatura.html" class="no-ch">5.4. Semáforo de temperatura</a></li>
+      <li><a href="55_nuestro_proyecto_final.html" class="no-ch">5.5. Nuestro proyecto final</a></li>
+   </ul>
+   </li>
+   <li><a href="6_presentamos_nuestro_trabajo.html" class="no-ch">6. Presentamos nuestro trabajo</a></li>
+   <li><a href="7_sacamos_conclusiones.html" class="no-ch">7. Sacamos conclusiones</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="52_sensor_de_temperatura_con_actuador_led_rgb.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>17</strong> de <strong>22</strong></span> <span class="sep">| </span><a href="54_semforo_de_temperatura.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.3. Actuador pantalla LCD</h1></header>
+<article class="iDevice_wrapper activityIdevice em_iDevice em_iDevice_activity" id="id1371">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">¿Vamos con otra simulación?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1371_1323_2" class="block iDevice_content">
+<p>En esta práctica con Arduino y Tinkercard, vamos a conocer la pantalla LCD. Con ella podremos mostrar mensajes, lecturas de los sensores, etc.</p>
+<p></p>
+<p></p>
+<p><img src="arduino-con-lcd.jpg" alt="LCD Arduino" title="LCD Arduino" width="800" height="320" /></p>
+<p>Mírate antes estos vídeos, encontrarás cosas muy interesantes:</p>
+<p><a href="https://www.youtube.com/watch?v=JEZiHQY-JPI">Módulo LCD 1602A con librería LiquidCrystal</a></p>
+<p><a href="Simulando un LCD en Tinkercad con Arduino">https://www.youtube.com/watch?v=6QzIVh6upyQ</a></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_preknowledge" id="id1372">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">¿Qué es un LCD?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1372_1324_2" class="block iDevice_content">
+<div class="hJDwNd-AhqUyc-OiUrBf Ft7HRd-AhqUyc-OiUrBf purZT-AhqUyc-II5mzb ZcASvf-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c Ktthjf-AhqUyc-qWD73c JNdkSc SQVYQc">
+<div class="JNdkSc-SmKAyb LkDMRd">
+<div class="" jscontroller="sGwD4d" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jsname="F57UId">
+<div class="oKdM2c ZZyype Kzv0Me">
+<div id="h.30a752a90adf9b25_92" class="hJDwNd-AhqUyc-OiUrBf Ft7HRd-AhqUyc-OiUrBf jXK9ad D2fZ2 zu5uec OjCsFc dmUFtb wHaque g5GTcb">
+<div class="jXK9ad-SmKAyb">
+<div class="tyJCtd mGzaTb Depvyb baZpAe">
+<div class="exe-layout-2-cols exe-layout-2-30-70 exe-clear">
+<div class="exe-col exe-col-1">
+<p><img src="gif_animado_narrador_juvenil.gif" alt="gif_animado_narrador_juvenil" title="gif_animado_narrador_juvenil.gif" width="500" height="500" /></p>
+</div>
+<div class="exe-col exe-col-2">
+<p>LCD es el acrónimo de Liquid Crystal Display (en español Pantalla de Cristal Líquido). No es una tecnología novedosa. El LCD lleva con nosotros mucho tiempo, solo tenemos que echar la mirada hacia atrás y recordar esos relojes Casio o las calculadoras que llevamos a clase de matemáticas.</p>
+<p>Trabajaremos con un LCD típico, de 16×2. Esto significa que vamos a poder mostrar 16 caracteres en dos filas distintas</p>
+</div>
+</div>
+<p>Conexiones de un LCD con Arduino<br />La pantalla LCD que usaremos, vienen con una fila de dieciséis pines. Los primeros catorce pines se utilizan para controlar la visualización. Los dos últimos pines son para la iluminación de fondo:</p>
+<p></p>
+<table border="1" style="height: 210px; width: 50%; border-style: solid; border-color: #3862d6; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;"><span style="color: #0000ff;"><strong>PIN </strong></span></td>
+<td style="width: 261.702%; height: 21px; text-align: center;"><span style="color: #0000ff;"><strong>FUNCIÓN</strong></span></td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">1</td>
+<td style="width: 261.702%; height: 21px;">GND (Tierra)</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">2</td>
+<td style="width: 261.702%; height: 21px;">5 Voltios</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">3</td>
+<td style="width: 261.702%; height: 21px;">Control de contraste pantalla</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">4</td>
+<td style="width: 261.702%; height: 21px;">RS – Selector entre comandos y datos</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">5</td>
+<td style="width: 261.702%; height: 21px;">RW – Escritura y lectura de comandos y datos</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">6</td>
+<td style="width: 261.702%; height: 21px;">Sincronización de lectura de datos</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">7 al 14</td>
+<td style="width: 261.702%; height: 21px;">Pines de datos de 8-bit</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">15</td>
+<td style="width: 261.702%; height: 21px;">Alimentación luz de fondo (5V)</td>
+</tr>
+<tr style="height: 21px;">
+<td style="width: 22.695%; height: 21px; text-align: center;">16</td>
+<td style="width: 261.702%; height: 21px;">GND (Tierra) luz de fondo (0V)</td>
+</tr>
+</tbody>
+</table>
+<div class="exe-layout-2-cols exe-layout-2-50-50 exe-clear">
+<div class="exe-col exe-col-1"></div>
+<div class="exe-col exe-col-2">
+<p></p>
+</div>
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id1373">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">El aspecto del LCD</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1373_1332_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2>Pines del LCD</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Esta imagen muestra la parte de abajo del LCD.</p>
+<p>Cuando lo conectes a la protoboard los pines estarán invertidos horizontalmente.<img src="pines-lcd.jpg" alt="pines-lcd.jpg" title="pines-lcd.jpg" width="749" height="500"></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id1374">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Empezamos?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1374_1325_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2>¿En qué va a consistir nuestra práctica?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-tabs">
+<h2 style="text-align: justify;">Qué vamos a hacer</h2>
+<p style="text-align: justify;">Pues vamos a hacer que nuestra pantalla LCD muestre "Hola Mundo !!!!!!"</p>
+<h2 style="text-align: justify;">Componentes</h2>
+<p style="text-align: justify;">Componentes que vamos a necesitar:</p>
+<ul style="text-align: justify;">
+<li>Placa Microcontroladora Arduino</li>
+<li>Protoboard</li>
+<li>Cables</li>
+<li>Pantalla LCD 16X2</li>
+<li>Resistencia 330 Ω</li>
+</ul>
+<p style="text-align: justify;">La resistencia de 330 Ω permite regular el voltaje a la entrada de la alimentación del LCD.</p>
+<h2 style="text-align: justify;">Consideraciones:</h2>
+<p style="text-align: justify;">Lee atentamente:</p>
+<ul style="text-align: justify;">
+<li>Conectamos directamente el LCD a las conexiones de la protoboard</li>
+<li>el 1º pin GND lo conectamos a tierra</li>
+<li>el 2º VCC lo conectamos a voltaje, 5 Voltios</li>
+<li>el 3º Control de contraste pantalla, lo vamos a conectar a tierra para no tener que usar un potenciómetro (El potenciómetro se utiliza para regular el contraste de la pantalla)</li>
+<li>el 4º RS – Selector entre comandos y datos lo conectamos con el Pin Digital 2</li>
+<li>el 5º RW – Escritura y lectura de comandos y datos, lo conectamos a tierra</li>
+<li>el 6º Sincronización de lectura de datos lo conectamos con el Pin Digital 3</li>
+<li>7-14 Pines de datos de 8-bit, Vamos a usar solo los 4 últimos, del DB4 al DB7 y los vamos a conectar a los pines digitales del 4 al 7 de la microcontroladora</li>
+<li>15 Alimentación luz de fondo (5V) que la conectaremos con la resistencia de 330 ohmios</li>
+<li>16 GND (Tierra) luz de fondo (0V) que irá a tierra</li>
+</ul>
+<h2 style="text-align: justify;">¿Empujoncito?</h2>
+<p style="text-align: justify;">Ver solución <a href="https://docs.google.com/document/d/1XKiKmuo5T2GEqjeAFGPztMp2QVSlZX14/edit?usp=sharing&amp;ouid=105841194850161965435&amp;rtpof=true&amp;sd=true">aquí:</a></p>
+<h2 style="text-align: justify;">Más ayuda</h2>
+<p style="text-align: justify;">Si quieres ver otra ayudita, mira&nbsp;<a href="https://www.youtube.com/watch?v=6QzIVh6upyQ">aquí</a> <iframe width="560" height="314" src="https://www.youtube.com/embed/6QzIVh6upyQ"></iframe></p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="52_sensor_de_temperatura_con_actuador_led_rgb.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>17</strong> de <strong>22</strong></span> <span class="sep">| </span><a href="54_semforo_de_temperatura.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.1. Sensor de C02 con actuador Zumbador | Construimos nuestro semáforo ambiental </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Este REA es una adaptación de los recurso originales &quot;Guía Docente de: Los sentidos artificiales&quot; del Proyecto REA Andalucía de la Consejería de Educación y Deporte de la Junta de Andalucía, que lo distribuye bajo licencia de CC BY-SA-NC." />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-146"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Construimos nuestro semáforo ambiental</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Construimos nuestro semáforo ambiental</a></li>
+   <li><a href="1_qu_vamos_a_hacer.html" class="no-ch">1. ¿Qué vamos a hacer?</a></li>
+   <li><a href="2_activamos_nuestros_circuitos.html" class="no-ch">2. Activamos nuestros circuitos</a></li>
+   <li><a href="3_nuestra_placa_robtica.html" class="daddy">3. Nuestra placa robótica</a>
+   <ul class="other-section">
+      <li><a href="31_exploramos_la_placa.html" class="no-ch">3.1. Exploramos la placa</a></li>
+      <li><a href="32_el_cerebro_de_nuestro_robot.html" class="daddy">3.2. El cerebro de nuestro robot</a>
+      <ul class="other-section">
+         <li><a href="321_qu_has_aprendido_sobre_los_microcontroladores.html" class="no-ch">3.2.1. Qué has aprendido sobre los microcontroladores</a></li>
+      </ul>
+      </li>
+      <li><a href="33_entradas_procesamiento_y_salidas.html" class="no-ch">3.3. Entradas, procesamiento y salidas</a></li>
+   </ul>
+   </li>
+   <li><a href="4_enseamos_a_nuestra_placa.html" class="daddy">4. Enseñamos a nuestra placa</a>
+   <ul class="other-section">
+      <li><a href="41_practiquemos_con_los_algoritmos.html" class="no-ch">4.1. Practiquemos con los algoritmos</a></li>
+      <li><a href="42_en_qu_idioma_me_comunico_con_mi_placa.html" class="daddy">4.2. ¿En qué idioma me comunico con mi placa?</a>
+      <ul class="other-section">
+         <li><a href="421_nuestro_editor_de_cdigo.html" class="no-ch">4.2.1. Nuestro editor de código</a></li>
+      </ul>
+      </li>
+      <li><a href="43_empecemos_a_trabajar.html" class="no-ch">4.3. Empecemos a trabajar.</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_nos_ponemos_manos_a_la_obra.html" class="current-page-parent daddy">5. Nos ponemos manos a la obra</a>
+   <ul>
+      <li id="active"><a href="51_sensor_de_c02_con_actuador_zumbador.html" class="active no-ch">5.1. Sensor de C02 con actuador Zumbador</a></li>
+      <li><a href="52_sensor_de_temperatura_con_actuador_led_rgb.html" class="no-ch">5.2. Sensor de temperatura con actuador Led RGB</a></li>
+      <li><a href="53_actuador_pantalla_lcd.html" class="no-ch">5.3. Actuador pantalla LCD</a></li>
+      <li><a href="54_semforo_de_temperatura.html" class="no-ch">5.4. Semáforo de temperatura</a></li>
+      <li><a href="55_nuestro_proyecto_final.html" class="no-ch">5.5. Nuestro proyecto final</a></li>
+   </ul>
+   </li>
+   <li><a href="6_presentamos_nuestro_trabajo.html" class="no-ch">6. Presentamos nuestro trabajo</a></li>
+   <li><a href="7_sacamos_conclusiones.html" class="no-ch">7. Sacamos conclusiones</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="5_nos_ponemos_manos_a_la_obra.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>15</strong> de <strong>22</strong></span> <span class="sep">| </span><a href="52_sensor_de_temperatura_con_actuador_led_rgb.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.1. Sensor de C02 con actuador Zumbador</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id1361">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Nuestra Primera Simulación Tinkercard</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1361_1317_2" class="block iDevice_content">
+<div class="exe-text"><p dir="ltr" class="zfr3Q CDt4Ke "><span class="C9DxTc ">Esta práctica la realizarás con tu compañero pero tendrás que dejar evidencias de lo realizado.</span></p>
+<p dir="ltr" class="zfr3Q CDt4Ke "><span class="C9DxTc ">Para ello, indicarás en qué consiste la práctica, los pasos que has seguido e incluirás capturas de pantalla que demuestren el trabajo realizado.</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id1362">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Sensor de C02 con Zumbador</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1362_1318_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2>Qué vamos a hacer</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><span>La práctica consiste en simular un detector de gas para el cual usaremos el zumbador (piezo) que emitirá un zumbido cuando estos niveles sean muy altos.&nbsp;</span></p>
+<div class="exe-fx exe-tabs">
+<h2 style="text-align: center;">Componentes</h2>
+<p dir="ltr" class="zfr3Q CDt4Ke " style="text-align: justify;"><span class="C9DxTc ">Tendrás que usar los siguientes<span>&nbsp;</span></span><span class="C9DxTc ">componentes</span><span class="C9DxTc ">:</span></p>
+<ul class="n8H08c UVNKR " style="text-align: justify;">
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">protoboard</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">piezo</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">sensor de gas</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">cables conectores</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">una resistencia de 4.7 KΩ</span></p>
+</li>
+</ul>
+<h2 style="text-align: center;"><span>Conexiones&nbsp;</span></h2>
+<p dir="ltr" class="zfr3Q CDt4Ke " style="text-align: justify;"><span class="C9DxTc ">Las<span>&nbsp;</span></span><span class="C9DxTc ">conexiones<span>&nbsp;</span></span><span class="C9DxTc ">que realizaremos serán las siguientes:</span></p>
+<ul class="n8H08c UVNKR " style="text-align: justify;">
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">alimentaremos el protoboard con la salida de 5 voltios de Arduino (usar cable rojo y pinchar en línea roja paralela de la protoboard (</span><span class="C9DxTc ">marcada con " - ")</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">cogeremos un cable negro para la conexión de tierra GND (pinchar en la línea negra, marcada con " - ")</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">haremos un puente con la línea de&nbsp; voltaje y de tierra para alimentar el protoboard por la otra parte (por</span><span class="C9DxTc "><span>&nbsp;</span>las otras líneas paralelas roja y negra de la protoboard)</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">Pinchamos el sensor de gas de manera que tres de sus conexiones estén en una parte de la protoboard y las otras&nbsp; tres en la otra parte de la placa</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">tres de las conexiones del sensor&nbsp; irán directamente&nbsp; a voltaje (pinchadas para que conecten con voltaje)</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">las otras tres conexiones del sensor, las conectaremos de la siguiente manera:&nbsp;</span></p>
+<ul class="n8H08c UVNKR ">
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">una de ellas irá hacia tierra pero pasando por la resistencia, es decir conectaremos por medio una resistencia</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">la otra irá directamente a tierra (cable negro)</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">y por último realizaremos la conexión de la tercera patilla del sensor a la entrada analógica de Arduino . En este caso vamos a usar la entrada A0 (Analógica 0) (vamos a usar un cable azul)</span><span class="C9DxTc "></span></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 style="text-align: center;"><span class="C9DxTc ">Cómo vamos</span></h2>
+<p style="text-align: justify;"><span class="C9DxTc ">El estado de nuestro montaje tiene que tener esta pinta:</span></p>
+<p style="text-align: justify;"><span class="C9DxTc "><img src="Sensor_C02_1.GIF" alt="Sensor_CO2_1" title="Sensor_CO2_1" width="529" height="506" style="display: block; margin-left: auto; margin-right: auto;"></span></p>
+<h2 style="text-align: justify;"><span class="C9DxTc ">¿Seguimos?</span></h2>
+<p style="text-align: justify;">Ahora&nbsp; vamos a&nbsp;conectar nuestro&nbsp;piezo&nbsp;o zumbador. Lo vamos a girar para poder conectarlo con mayor facilidad:</p>
+<ul style="text-align: justify;">
+<li>un extremo tiene que ir conectado a tierra&nbsp;</li>
+<li>y el otro lo tenemos&nbsp;que conectar a una salida de la placa, que es una salida digital. Vamos a usar en este caso el pin número 13</li>
+</ul>
+<p style="text-align: justify;">Con esto ya se habría terminado todo lo concerniente a las conexiones. Nos quedaría algo de este tipo:<img src="Sensor_C02_2.GIF" alt="Sensor_C02_1" title="Sensor_C02_1" width="494" height="481" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2 style="text-align: justify;">Ahora codificamos</h2>
+<p dir="ltr" class="zfr3Q CDt4Ke " style="text-align: justify;"><span class="C9DxTc ">Ahora, toca hacer la parte de programación.</span></p>
+<p dir="ltr" class="zfr3Q CDt4Ke " style="text-align: justify;"><span class="C9DxTc ">El lenguaje del Arduino está basado en el lenguaje C. Es una versión reducida y mucho más sencilla de manejar que el lenguaje C. El objetivo de este lenguaje es que puedas programar de una manera intuitiva concentrándote en lo que quieres hacer más que en la manera de hacerlo.</span></p>
+<p dir="ltr" class="zfr3Q CDt4Ke " style="text-align: justify;"><span class="C9DxTc ">Por ahora vamos a ver el código que se usaría en esta práctica.</span></p>
+<p dir="ltr" class="zfr3Q CDt4Ke " style="text-align: justify;"><span class="C9DxTc ">Vamos a hacer el código en dos partes:</span></p>
+<ul class="n8H08c UVNKR ">
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn " style="text-align: justify;">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke "><span class="C9DxTc ">La primera parte nos va a indicar a partir de qué concentración de gas va a sonar el zumbador. Para ello veremos los valores que nos da el "monitor en serie"</span></p>
+</li>
+<li dir="ltr" class="zfr3Q TYR86d eD0Rn ">
+<p dir="ltr" role="presentation" class="zfr3Q CDt4Ke " style="text-align: justify;"><span class="C9DxTc ">con la segunda parte y sabiendo que niveles son los que soporta el sensor, terminaremos de hacer el programa.</span><span class="C9DxTc "></span></p>
+</li>
+</ul>
+<h2><span class="C9DxTc ">Primera Parte.</span></h2>
+<p><span class="C9DxTc "> Código para detectar el nivel de CO2 haciendo uso del monitor en serie.</span></p>
+<p>El monitor&nbsp; en serie (monitor serial) es muy útil en este tipo de prototipos ya que nos permite ejecutar y ver los resultados.&nbsp; Según los valores que muestre el monitor en serie,&nbsp; así es como estableceremos las condiciones estructuras y para encender o apagar el zumbador en la segunda parte del programa.</p>
+<p>Escribid el siguiente código:</p>
+<p>// C++ code</p>
+<p>//</p>
+<p>int gas=0;</p>
+<p>void setup()</p>
+<p>{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Serial.begin(9600);</p>
+<p>}</p>
+<p><br>void loop()</p>
+<p>{</p>
+<p>gas= analogRead (A0);</p>
+<p>&nbsp;Serial.println(gas);</p>
+<p>&nbsp;delay(1000); // Wait for 1000 millisecond(s)</p>
+<p>&nbsp;&nbsp;}</p>
+<h2>¿Tenéis algo así?</h2>
+<p>Si picamos en el simulador&nbsp; veréis que se ve algo así</p>
+<p><img src="Sensor_C02_3.GIF" alt="Sensor_CO2_3" title="Sensor_CO2_3" width="1296" height="552"></p>
+<p>Si además, acercamos la nube al sensor, veréis que empieza el zumbador a funcionar y podemos ver los valores de CO2 a partir del cual empiezan los zumbidos.</p>
+<p>Como veis, unas valores mayores de 440,&nbsp; son suficiente para que se nos avise de la concentración de CO2.</p>
+<p>¿Lo estás viendo?, ¡¡¡pues seguimos máquina!!!</p>
+<h2>Terminamos ya</h2>
+<p>Ahora vamos a completar el programa para que quien nos avise de la concentración, sea el zumbador:</p>
+<ul>
+<li>Declaramos otra variable, que la vamos a llamar piezo y la iniciamos a 13 que es el pin en el que lo hemos conectado la salida del zumbador</li>
+<li>En el módulo&nbsp;setup&nbsp;indicamos que el pin A0 es de entrada y que el 13 es de Salida. Asignamos el valor del pin 13 a nuestra variable&nbsp; piezo</li>
+<li>En el módulo&nbsp;loop, controlamos el valor de la variable gas para activar el zumbador. Antes indicamos que la variable gas contiene la lectura analógica del pin A0 (gas= analogRead (A0).</li>
+</ul>
+<p>El programa quedaría de esta manera:</p>
+<p>// C++ code</p>
+<p>//</p>
+<p>int gas;//pin 0, variable que nos va a indicar los valores del C02</p>
+<p>int piezo=13;//para indicar que el piezo está conectado al pin13</p>
+<p>void setup()</p>
+<p>{</p>
+<p>&nbsp;&nbsp;&nbsp;pinMode(A0, INPUT);</p>
+<p>&nbsp;&nbsp;pinMode(13, OUTPUT);</p>
+<p>&nbsp;&nbsp;piezo=13;</p>
+<p>}</p>
+<p>void loop()</p>
+<p>{</p>
+<p>&nbsp;gas= analogRead (A0);</p>
+<p>&nbsp;&nbsp;if(gas&gt;440){</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;tone (piezo, 523,200);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;delay(500); // Wait for 500 millisecond(s)</p>
+<p>&nbsp;&nbsp;}</p>
+<p>}</p>
+<p>Si ya lo has hecho todo, pasa a la siguiente pestaña que te muestro el resultado final</p>
+<h2>Proyecto Terminado</h2>
+<p><img src="Sensor_C02_4.GIF" alt="Sensor_C02_4.GIF" title="Sensor_C02_4.GIF" width="1345" height="606"></p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_preknowledge" id="id1363">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Necesitas más ayuda</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1363_1319_2" class="block iDevice_content">
+<p>Puedes ver este vídeo para ilustrarte de cómo se realizaría esta práctica <a href="https://www.youtube.com/watch?v=2EiwlmKImAc">https://www.youtube.com/watch?v=2EiwlmKImAc</a></p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/2EiwlmKImAc"></iframe></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="5_nos_ponemos_manos_a_la_obra.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>15</strong> de <strong>22</strong></span> <span class="sep">| </span><a href="52_sensor_de_temperatura_con_actuador_led_rgb.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
